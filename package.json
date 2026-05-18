@@ -1,0 +1,35 @@
+{
+  "name": "postman-api-testing-project",
+  "version": "1.0.0",
+  "description": "Professional API testing framework using Postman Collections and Newman CLI",
+  "main": "index.js",
+  "scripts": {
+    "test": "newman run collections/API_Testing_Framework.postman_collection.json -e environments/test_env.postman_environment.json -r cli,html --reporter-html-export reports/report.html",
+    "test:cli": "newman run collections/API_Testing_Framework.postman_collection.json -e environments/test_env.postman_environment.json -r cli",
+    "install-newman": "npm install -g newman"
+  },
+  "keywords": [
+    "api-testing",
+    "postman",
+    "newman",
+    "automation",
+    "testing-framework",
+    "rest-api",
+    "qa",
+    "javascript"
+  ],
+  "author": "API Testing Team",
+  "license": "MIT",
+  "dependencies": {
+    "newman": "^6.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aboutanjalee/postman-api-testing-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aboutanjalee/postman-api-testing-project/issues"
+  },
+  "homepage": "https://github.com/aboutanjalee/postman-api-testing-project#readme"
+}
